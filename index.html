@@ -1,0 +1,853 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jason Mensching | Remote Virtual Assistant, CRM and Lead Management</title>
+  <meta name="description" content="Jason Mensching is a Philippines-based remote virtual assistant supporting U.S.-based businesses with GoHighLevel CRM upkeep, lead follow-up, appointment setting, and business funding support.">
+  <meta name="theme-color" content="#101B2D">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jason Mensching | Remote Virtual Assistant, CRM and Lead Management">
+  <meta property="og:description" content="Leads followed up. Records current. Nothing left hanging. Remote VA support for CRM, lead follow-up, appointment setting, and business funding operations.">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    /* Apply saved theme before paint to avoid a flash */
+    document.documentElement.classList.add('js');
+    (function () {
+      try {
+        var t = localStorage.getItem('jm-theme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) { document.documentElement.setAttribute('data-theme', 'light'); }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- SVG icon sprite (used by the services list) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-admin" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M9 15l2 2 4-4"/></symbol>
+      <symbol id="i-crm" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16M15 4v16M5.5 8h1.5M11.5 8h1M17 8h1.5"/></symbol>
+      <symbol id="i-funding" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 14l2 2 4-4"/></symbol>
+      <symbol id="i-credit" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6M16 11l2 2 3.5-3.5"/></symbol>
+      <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10M10 20v-6h4v6"/></symbol>
+      <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/><path d="M19 19c0 1.5-2 2.5-5 2.5"/></symbol>
+      <symbol id="i-clip" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12h6M9 16h4"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Jason Mensching, back to top">
+        <span class="monogram" aria-hidden="true">JM</span>
+        <span class="brand-name">Jason Mensching</span>
+      </a>
+
+      <nav id="primary-nav" class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#industries">Industries</a>
+        <a href="#experience">Experience</a>
+        <a href="#samples">Work Samples</a>
+        <a href="#contact">Contact</a>
+        <div class="nav-actions-mobile">
+          <a class="btn btn-ghost" href="assets/Jason-Mensching-CV.pdf" download="Jason-Mensching-CV.pdf">Download My CV</a>
+          <a class="btn btn-primary" href="#contact">Let's Work Together</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <svg class="ico-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
+          <svg class="ico-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <a class="btn btn-ghost nav-cv" href="assets/Jason-Mensching-CV.pdf" download="Jason-Mensching-CV.pdf">Download My CV</a>
+        <a class="btn btn-primary nav-cta" href="#contact">Let's Work Together</a>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path class="bar-top" d="M4 7h16"/><path class="bar-mid" d="M4 12h16"/><path class="bar-bot" d="M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <!-- EDIT: change the availability text below whenever your status changes -->
+          <p class="avail"><span class="dot" aria-hidden="true"></span><span id="availability">Available for remote VA roles and contracts</span></p>
+          <h1 id="hero-title">Leads followed up. Records current. Nothing left hanging.</h1>
+          <p class="lead">I'm Jason, a remote virtual assistant who supports U.S.-based businesses with CRM upkeep, lead follow-up, appointment setting, and business funding support. I keep the details tidy so owners and sales teams don't have to chase them.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary btn-lg" href="#contact">Let's Work Together</a>
+            <a class="btn btn-outline btn-lg" href="assets/Jason-Mensching-CV.pdf" download="Jason-Mensching-CV.pdf">Download My CV</a>
+          </div>
+          <p class="cta-tertiary"><a class="text-link" href="#services">Explore my services <span aria-hidden="true">&rarr;</span></a></p>
+          <p class="hero-meta">Philippines-based &middot; Works remotely with U.S.-based teams &middot; GoHighLevel, Carbon CRM, Slack, Notion, Outlook</p>
+        </div>
+
+        <figure class="pipeline" aria-labelledby="pipe-cap">
+          <div class="pipe-bar">
+            <span class="pipe-title">Lead pipeline</span>
+            <span class="pipe-note">Sample layout</span>
+          </div>
+          <div class="pipe-cols" role="img" aria-label="Illustration of a four-stage lead pipeline: New lead, Contacted, Documents requested, Appointment set, with sample cards in each stage">
+            <div class="pipe-col">
+              <h3>New lead</h3>
+              <div class="pcard"><strong>Sample Business A</strong><span>Next: first call</span><em>Today</em></div>
+              <div class="pcard"><strong>Sample Business B</strong><span>Next: send intro email</span><em>Today</em></div>
+            </div>
+            <div class="pipe-col">
+              <h3>Contacted</h3>
+              <div class="pcard"><strong>Sample Business C</strong><span>Next: follow-up text</span><em>Wed</em></div>
+            </div>
+            <div class="pipe-col">
+              <h3>Documents requested</h3>
+              <div class="pcard hot"><strong>Sample Business D</strong><span>Next: chase bank statements</span><em>Tue</em></div>
+              <div class="pcard"><strong>Sample Business E</strong><span>Next: confirm receipt</span><em>Thu</em></div>
+            </div>
+            <div class="pipe-col">
+              <h3>Appointment set</h3>
+              <div class="pcard"><strong>Sample Business F</strong><span>Next: reminder message</span><em>Fri</em></div>
+            </div>
+          </div>
+          <figcaption id="pipe-cap">Every lead has one stage, one next step, and one date. Illustration only, with made-up names.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="highlights tone-navy" aria-label="Professional highlights">
+      <div class="container hl-grid">
+        <div class="hl"><p class="hl-big">Several years</p><p class="hl-small">of customer service on BPO accounts</p></div>
+        <div class="hl"><p class="hl-big">Nearly 2 years</p><p class="hl-small">as a remote VA for U.S.-based businesses</p></div>
+        <div class="hl"><p class="hl-big">GoHighLevel</p><p class="hl-small">daily CRM records, notes, and follow-up tasks</p></div>
+        <div class="hl"><p class="hl-big">Hands-on</p><p class="hl-small">in business funding, real estate, chiropractic, and healthcare provider support</p></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container split">
+        <div class="split-head reveal">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">Customer service habits, applied to business operations.</h2>
+        </div>
+        <div class="split-body reveal">
+          <p>I'm a remote support professional based in the Philippines. My background is customer service, and over the last two years it has grown into operations work for U.S.-based businesses: keeping CRM records accurate, following up with leads, setting appointments, and collecting the documents a funding application needs.</p>
+          <p>Before that I handled claims, benefits, and rebate questions on BPO accounts. That work taught me to follow a procedure, document every interaction, and stay patient with people who just want a clear answer. I have also spent time cold calling property owners and booking appointments for local real estate representatives.</p>
+          <p>What I do best is the follow-through. I update the record, send the follow-up, and flag what needs a decision. I work independently in GoHighLevel, Slack, Notion, and Outlook, and I know when to bring something to the owner instead of guessing.</p>
+          <aside class="scope-note" aria-label="What I do and do not do">
+            <h3>Scope, stated plainly</h3>
+            <p>I'm a CRM user and operations support, not a developer or automation architect. I don't give financial, legal, or credit advice, and I'm not a licensed medical professional.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section section-alt" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Services</p>
+          <h2 id="services-title">What I can take off your plate</h2>
+          <p class="section-sub">Each service is marked by how I know it: hands-on from past roles, or transferable from related work. Scope notes say where my experience stops.</p>
+        </div>
+
+        <ol class="svc-list">
+          <li class="svc reveal">
+            <span class="svc-ico"><svg aria-hidden="true"><use href="#i-admin"/></svg></span>
+            <div class="svc-main">
+              <h3>Virtual Assistant &amp; Administrative Support</h3>
+              <span class="tag tag-hands">Hands-on</span>
+              <p>Steady day-to-day support that keeps records, calendars, and follow-ups current.</p>
+            </div>
+            <ul class="svc-points">
+              <li>Daily operational support</li>
+              <li>Documentation and data entry</li>
+              <li>Calendar and appointment coordination</li>
+              <li>Follow-up tracking</li>
+              <li>Customer and client communication</li>
+            </ul>
+            <a class="text-link svc-cta" href="#contact" data-service="Virtual assistant and admin support">Ask about this <span aria-hidden="true">&rarr;</span></a>
+          </li>
+
+          <li class="svc reveal">
+            <span class="svc-ico"><svg aria-hidden="true"><use href="#i-crm"/></svg></span>
+            <div class="svc-main">
+              <h3>GoHighLevel CRM Support</h3>
+              <span class="tag tag-hands">Hands-on</span>
+              <p>Clean contact records and pipelines, so the next step on every lead is clear.</p>
+              <p class="scope">Scope: I work inside GoHighLevel as a daily user. I don't build custom integrations, code, or complex automations.</p>
+            </div>
+            <ul class="svc-points">
+              <li>Contact and lead management</li>
+              <li>Pipeline updates and lead progress tracking</li>
+              <li>CRM notes and status tracking</li>
+              <li>Follow-up tasks and reminders</li>
+              <li>Email and SMS follow-up</li>
+            </ul>
+            <a class="text-link svc-cta" href="#contact" data-service="GoHighLevel CRM support">Ask about this <span aria-hidden="true">&rarr;</span></a>
+          </li>
+
+          <li class="svc reveal">
+            <span class="svc-ico"><svg aria-hidden="true"><use href="#i-funding"/></svg></span>
+            <div class="svc-main">
+              <h3>Business Funding &amp; Lending Support</h3>
+              <span class="tag tag-hands">Hands-on</span>
+              <p>Help applicants move from first inquiry to a complete, organized file.</p>
+              <p class="scope">Scope: I prepare and organize applications. I don't approve, price, or promise funding, and I don't give financial advice.</p>
+            </div>
+            <ul class="svc-points">
+              <li>Warm-lead follow-up and prequalification</li>
+              <li>Review of revenue, time in business, requested amount, and bank statements against your criteria</li>
+              <li>Document collection and organization</li>
+              <li>Hand-off of complete files to a colleague, or to the owner for direction</li>
+              <li>CRM pipeline maintenance</li>
+            </ul>
+            <a class="text-link svc-cta" href="#contact" data-service="Business funding support">Ask about this <span aria-hidden="true">&rarr;</span></a>
+          </li>
+
+          <li class="svc reveal">
+            <span class="svc-ico"><svg aria-hidden="true"><use href="#i-credit"/></svg></span>
+            <div class="svc-main">
+              <h3>Credit Services Client Support</h3>
+              <span class="tag tag-transfer">Transferable</span>
+              <p>Administrative follow-through for credit-related businesses, within the rules you set.</p>
+              <p class="scope">Scope: I haven't done credit repair or dispute work and I don't give credit advice. My related experience is credit score review during funding prequalification.</p>
+            </div>
+            <ul class="svc-points">
+              <li>Lead follow-up</li>
+              <li>Appointment scheduling</li>
+              <li>Administrative onboarding support</li>
+              <li>CRM updates</li>
+            </ul>
+            <a class="text-link svc-cta" href="#contact" data-service="Credit services client support">Ask about this <span aria-hidden="true">&rarr;</span></a>
+          </li>
+
+          <li class="svc reveal">
+            <span class="svc-ico"><svg aria-hidden="true"><use href="#i-home"/></svg></span>
+            <div class="svc-main">
+              <h3>Real Estate Lead Follow-Up &amp; Cold Calling</h3>
+              <span class="tag tag-hands">Hands-on</span>
+              <p>Outbound calling to property owners, with tidy tracking so good conversations aren't lost. My real estate work was contract and freelance, 2019 to 2020.</p>
+            </div>
+            <ul class="svc-points">
+              <li>Outbound calls to property owners from scripts and lead lists</li>
+              <li>Appointments scheduled for local representatives</li>
+              <li>Lead record updates and follow-up tracking</li>
+              <li>Property research with Zillow and Redfin</li>
+            </ul>
+            <a class="text-link svc-cta" href="#contact" data-service="Real estate lead follow-up">Ask about this <span aria-hidden="true">&rarr;</span></a>
+          </li>
+
+          <li class="svc reveal">
+            <span class="svc-ico"><svg aria-hidden="true"><use href="#i-headset"/></svg></span>
+            <div class="svc-main">
+              <h3>Customer Service &amp; Customer Experience</h3>
+              <span class="tag tag-hands">Hands-on</span>
+              <p>Clear answers, accurate account details, and a written record of every interaction.</p>
+            </div>
+            <ul class="svc-points">
+              <li>Customer inquiries and status questions</li>
+              <li>Account verification and updates</li>
+              <li>Explaining requirements and next steps</li>
+              <li>Documentation of each interaction</li>
+              <li>Follow-up by phone, email, and SMS</li>
+            </ul>
+            <a class="text-link svc-cta" href="#contact" data-service="Customer service">Ask about this <span aria-hidden="true">&rarr;</span></a>
+          </li>
+
+          <li class="svc reveal">
+            <span class="svc-ico"><svg aria-hidden="true"><use href="#i-clip"/></svg></span>
+            <div class="svc-main">
+              <h3>Healthcare, Insurance &amp; Claims Support</h3>
+              <span class="tag tag-hands">Hands-on</span>
+              <p>Non-clinical support for claims and benefits questions, with careful case records.</p>
+              <p class="scope">Scope: my healthcare experience is provider service on a BPO account. I haven't done medical billing or coding, and I don't make coverage or clinical decisions.</p>
+            </div>
+            <ul class="svc-points">
+              <li>Claims inquiries and benefits information for healthcare providers</li>
+              <li>Case follow-up and record keeping</li>
+              <li>Review of claim documents and supporting files (device protection claims)</li>
+              <li>Document verification</li>
+            </ul>
+            <a class="text-link svc-cta" href="#contact" data-service="Healthcare and insurance admin support">Ask about this <span aria-hidden="true">&rarr;</span></a>
+          </li>
+
+          <li class="svc reveal">
+            <span class="svc-ico"><svg aria-hidden="true"><use href="#i-phone"/></svg></span>
+            <div class="svc-main">
+              <h3>Sales &amp; Appointment Setting Support</h3>
+              <span class="tag tag-hands">Hands-on</span>
+              <p>I handle the early funnel so your closers spend their time on conversations that are ready.</p>
+              <p class="scope">Scope: I warm up leads and book appointments. I'm not a closer and I don't claim a closing record.</p>
+            </div>
+            <ul class="svc-points">
+              <li>Warm and inactive lead follow-up, including after hours</li>
+              <li>Outbound calling</li>
+              <li>Qualification and appointment setting</li>
+              <li>Pipeline notes and clean hand-offs</li>
+            </ul>
+            <a class="text-link svc-cta" href="#contact" data-service="Sales and appointment setting">Ask about this <span aria-hidden="true">&rarr;</span></a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- INDUSTRIES -->
+    <section class="section tone-navy" id="industries" aria-labelledby="ind-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Industries</p>
+          <h2 id="ind-title">Where my skills apply</h2>
+          <p class="section-sub">One core skill set, applied in different settings. Filter by whether I have hands-on experience or I'm bringing transferable skills.</p>
+        </div>
+
+        <div class="ind-layout">
+          <div class="ind-nav">
+            <div class="chips" role="group" aria-label="Filter industries">
+              <button type="button" class="chip" data-filter="all" aria-pressed="true">All</button>
+              <button type="button" class="chip" data-filter="hands-on" aria-pressed="false">Hands-on</button>
+              <button type="button" class="chip" data-filter="transferable" aria-pressed="false">Transferable</button>
+            </div>
+            <div class="tablist" role="tablist" aria-label="Industries" aria-orientation="vertical">
+              <button role="tab" class="tab" id="tab-funding" aria-controls="panel-funding" aria-selected="true" data-kind="hands-on"><span>Business Funding</span><small>Hands-on</small></button>
+              <button role="tab" class="tab" id="tab-realestate" aria-controls="panel-realestate" aria-selected="false" tabindex="-1" data-kind="hands-on"><span>Real Estate</span><small>Hands-on</small></button>
+              <button role="tab" class="tab" id="tab-healthcare" aria-controls="panel-healthcare" aria-selected="false" tabindex="-1" data-kind="hands-on"><span>Healthcare &amp; Insurance</span><small>Hands-on, BPO</small></button>
+              <button role="tab" class="tab" id="tab-chiro" aria-controls="panel-chiro" aria-selected="false" tabindex="-1" data-kind="hands-on"><span>Chiropractic &amp; Wellness</span><small>Hands-on</small></button>
+              <button role="tab" class="tab" id="tab-ghl" aria-controls="panel-ghl" aria-selected="false" tabindex="-1" data-kind="hands-on"><span>GoHighLevel Teams</span><small>Hands-on, as a user</small></button>
+              <button role="tab" class="tab" id="tab-cs" aria-controls="panel-cs" aria-selected="false" tabindex="-1" data-kind="hands-on"><span>Customer Service Operations</span><small>Hands-on</small></button>
+              <button role="tab" class="tab" id="tab-sales" aria-controls="panel-sales" aria-selected="false" tabindex="-1" data-kind="hands-on"><span>Sales Teams</span><small>Hands-on, early funnel</small></button>
+              <button role="tab" class="tab" id="tab-credit" aria-controls="panel-credit" aria-selected="false" tabindex="-1" data-kind="transferable"><span>Credit Services</span><small>Transferable</small></button>
+            </div>
+          </div>
+
+          <div class="ind-panels">
+            <div role="tabpanel" class="panel" id="panel-funding" aria-labelledby="tab-funding" tabindex="0">
+              <span class="tag tag-hands">Hands-on experience</span>
+              <h3>Business Funding</h3>
+              <p class="panel-problem">Funding leads go cold when nobody follows up, and applications stall when documents arrive in pieces.</p>
+              <h4>How I help</h4>
+              <ul>
+                <li>Follow up with warm leads and check preliminary qualification requirements</li>
+                <li>Collect and organize documents and application details</li>
+                <li>Keep GoHighLevel notes, tasks, and lead progress up to date</li>
+                <li>Pass complete files to the right person, or flag them to the owner for direction</li>
+              </ul>
+              <p class="panel-bg"><strong>My background:</strong> Funding Specialist / Business Funding Support VA, Wealth Builders Academy / Wealth Builders Capital, Feb 2025 to Feb 2026.</p>
+              <a class="btn btn-primary" href="#contact" data-service="Business funding support">Discuss funding support</a>
+            </div>
+
+            <div role="tabpanel" class="panel" id="panel-realestate" aria-labelledby="tab-realestate" tabindex="0" hidden>
+              <span class="tag tag-hands">Hands-on experience</span>
+              <h3>Real Estate</h3>
+              <p class="panel-problem">Owner lists take steady calling and careful tracking, or the promising conversations get lost.</p>
+              <h4>How I help</h4>
+              <ul>
+                <li>Outbound calls to property owners from your scripts and lead lists</li>
+                <li>Appointments scheduled for your local representatives</li>
+                <li>Lead records and follow-ups kept current</li>
+                <li>Basic property research with Zillow and Redfin</li>
+              </ul>
+              <p class="panel-bg"><strong>My background:</strong> Real Estate Appointment Setter, contract / freelance, 2019 to 2020.</p>
+              <a class="btn btn-primary" href="#contact" data-service="Real estate lead follow-up">Discuss real estate support</a>
+            </div>
+
+            <div role="tabpanel" class="panel" id="panel-healthcare" aria-labelledby="tab-healthcare" tabindex="0" hidden>
+              <span class="tag tag-hands">Hands-on experience, BPO accounts</span>
+              <h3>Healthcare &amp; Insurance</h3>
+              <p class="panel-problem">Providers and customers want clear answers about claims and benefits, and every case needs a record.</p>
+              <h4>How I help</h4>
+              <ul>
+                <li>Non-clinical claims and benefits inquiry support</li>
+                <li>Case follow-up and accurate documentation</li>
+                <li>Review of claim documents, receipts, and photos for completeness</li>
+                <li>Following your procedures and escalating what needs a decision</li>
+              </ul>
+              <p class="panel-bg"><strong>My background:</strong> Provider Service Advocate at EXL (2018 to 2019), helping doctors and nurses with claims and benefits questions. Claims Review Examiner at Asurion (2023 to 2024), on a device protection account. <strong>Not included:</strong> medical billing or coding, or any clinical or coverage decisions.</p>
+              <a class="btn btn-primary" href="#contact" data-service="Healthcare and insurance admin support">Discuss healthcare admin support</a>
+            </div>
+
+            <div role="tabpanel" class="panel" id="panel-chiro" aria-labelledby="tab-chiro" tabindex="0" hidden>
+              <span class="tag tag-hands">Hands-on experience</span>
+              <h3>Chiropractic &amp; Wellness</h3>
+              <p class="panel-problem">Inactive leads and new inquiries need a prompt, friendly follow-up, and front desks rarely have the time.</p>
+              <h4>How I help</h4>
+              <ul>
+                <li>Contact warm and inactive leads to follow up on their interest</li>
+                <li>Schedule appointments, including outside regular hours</li>
+                <li>Track every contact in your CRM or a shared spreadsheet</li>
+                <li>Support outbound calling with tools such as CallHippo and Quo</li>
+              </ul>
+              <p class="panel-bg"><strong>My background:</strong> Appointment Setter, The Joint Chiropractic, Jan 2026 to Sep 2026, using Carbon CRM and Google Sheets.</p>
+              <a class="btn btn-primary" href="#contact" data-service="Sales and appointment setting">Discuss appointment setting</a>
+            </div>
+
+            <div role="tabpanel" class="panel" id="panel-ghl" aria-labelledby="tab-ghl" tabindex="0" hidden>
+              <span class="tag tag-hands">Hands-on, as a daily user</span>
+              <h3>GoHighLevel Teams</h3>
+              <p class="panel-problem">A CRM only helps when the records are current. Stale notes, missing tasks, and unclear stages make leads slip.</p>
+              <h4>How I help</h4>
+              <ul>
+                <li>Keep contact records and lead notes accurate</li>
+                <li>Maintain follow-up tasks and track lead progress through the pipeline</li>
+                <li>Handle email and SMS follow-up</li>
+                <li>Work inside the workflow your team already has</li>
+              </ul>
+              <p class="panel-bg"><strong>My background:</strong> daily GoHighLevel use in the funding role (2025 to 2026). I'm a user, not a builder of custom automations or integrations.</p>
+              <a class="btn btn-primary" href="#contact" data-service="GoHighLevel CRM support">Discuss CRM support</a>
+            </div>
+
+            <div role="tabpanel" class="panel" id="panel-cs" aria-labelledby="tab-cs" tabindex="0" hidden>
+              <span class="tag tag-hands">Hands-on experience</span>
+              <h3>Customer Service Operations</h3>
+              <p class="panel-problem">Customers want a clear next step, and the team wants a record of what was said.</p>
+              <h4>How I help</h4>
+              <ul>
+                <li>Answer status and eligibility questions</li>
+                <li>Verify and update account information</li>
+                <li>Document each interaction against your procedure</li>
+                <li>Explain requirements and what happens next</li>
+              </ul>
+              <p class="panel-bg"><strong>My background:</strong> T-Mobile rebates account at iQor Philippines (2024), device protection claims at Asurion (2023 to 2024), and provider service at EXL (2018 to 2019).</p>
+              <a class="btn btn-primary" href="#contact" data-service="Customer service">Discuss customer support</a>
+            </div>
+
+            <div role="tabpanel" class="panel" id="panel-sales" aria-labelledby="tab-sales" tabindex="0" hidden>
+              <span class="tag tag-hands">Hands-on, early funnel</span>
+              <h3>Sales Teams</h3>
+              <p class="panel-problem">Reps lose selling time to prospecting, follow-up, and scheduling.</p>
+              <h4>How I help</h4>
+              <ul>
+                <li>Outbound prospecting and lead follow-up</li>
+                <li>Qualification and appointment setting</li>
+                <li>Pipeline notes your team can act on</li>
+                <li>Clean hand-offs to the person who closes</li>
+              </ul>
+              <p class="panel-bg"><strong>My background:</strong> appointment setting in chiropractic and real estate, plus funding lead follow-up. I'm not a closer and I don't claim a closing record.</p>
+              <a class="btn btn-primary" href="#contact" data-service="Sales and appointment setting">Discuss sales support</a>
+            </div>
+
+            <div role="tabpanel" class="panel" id="panel-credit" aria-labelledby="tab-credit" tabindex="0" hidden>
+              <span class="tag tag-transfer">Transferable skills</span>
+              <h3>Credit Services</h3>
+              <p class="panel-problem">Credit-related businesses need consistent lead follow-up and onboarding admin, handled within the compliance rules the owner sets.</p>
+              <h4>How I help</h4>
+              <ul>
+                <li>Lead follow-up and appointment scheduling</li>
+                <li>Administrative onboarding support</li>
+                <li>CRM updates and follow-through</li>
+              </ul>
+              <p class="panel-bg"><strong>My background:</strong> I have no hands-on credit repair or dispute experience. I reviewed credit scores as part of funding prequalification, and the follow-up and documentation habits carry over. I don't give credit advice.</p>
+              <a class="btn btn-primary" href="#contact" data-service="Credit services client support">Discuss admin support</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Experience</p>
+          <h2 id="exp-title">Work history</h2>
+          <p class="section-sub">Listed in the order shown on my CV. Download the CV for the one-page version.</p>
+        </div>
+
+        <div class="exp-list">
+          <article class="exp reveal">
+            <div class="exp-meta">
+              <p class="exp-date">Feb 2025 to Feb 2026</p>
+              <p class="exp-ind">Business funding</p>
+            </div>
+            <div class="exp-body">
+              <h3>Funding Specialist / Business Funding Support VA</h3>
+              <p class="exp-co">Wealth Builders Academy / Wealth Builders Capital</p>
+              <ul>
+                <li>Supported business funding applications by reviewing preliminary qualification requirements and collecting documents.</li>
+                <li>Checked credit scores across all three bureaus, using a 700+ threshold for applications handled in this process.</li>
+                <li>Reviewed revenue, time in business, business type, requested amount, bank statements, and other application details.</li>
+                <li>Organized information for qualifying applicants and forwarded applications to a colleague, or notified the CEO for direction.</li>
+                <li>Managed CRM records in GoHighLevel: updated lead notes and follow-up tasks and tracked lead progress.</li>
+              </ul>
+              <p class="exp-tools"><span>Tools</span> GoHighLevel, Slack, Notion, Outlook, Nedzo.ai (communication, documentation, follow-up, and webinar outreach)</p>
+            </div>
+          </article>
+
+          <article class="exp reveal">
+            <div class="exp-meta">
+              <p class="exp-date">Jan 2026 to Sep 2026</p>
+              <p class="exp-ind">Chiropractic</p>
+            </div>
+            <div class="exp-body">
+              <h3>Appointment Setter</h3>
+              <p class="exp-co">The Joint Chiropractic</p>
+              <ul>
+                <li>Contacted warm and inactive leads to follow up on interest and schedule appointments, including after hours.</li>
+                <li>Updated lead information and tracked follow-ups in Carbon CRM and Google Sheets.</li>
+                <li>Used CallHippo, Quo, and other tools to support outbound calling and lead communication.</li>
+              </ul>
+              <p class="exp-tools"><span>Tools</span> Carbon CRM, Google Sheets, CallHippo, Quo</p>
+            </div>
+          </article>
+
+          <article class="exp reveal">
+            <div class="exp-meta">
+              <p class="exp-date">2024</p>
+              <p class="exp-ind">Telecom customer service</p>
+            </div>
+            <div class="exp-body">
+              <h3>Customer Service Representative, T-Mobile Rebates Account</h3>
+              <p class="exp-co">iQor Philippines</p>
+              <ul>
+                <li>Handled inquiries about rebate applications, including rebate status and processing updates.</li>
+                <li>Checked rebate eligibility and helped customers understand the requirements for qualifying rebates.</li>
+                <li>Helped customers with missing or delayed rebates by reviewing information and explaining next steps.</li>
+                <li>Verified and updated customer account information to help ensure accurate rebate processing.</li>
+                <li>Documented customer interactions and followed established procedures for rebate-related concerns.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="exp reveal">
+            <div class="exp-meta">
+              <p class="exp-date">2023 to 2024</p>
+              <p class="exp-ind">Device protection claims</p>
+            </div>
+            <div class="exp-body">
+              <h3>Claims Review Examiner, Device Protection Account</h3>
+              <p class="exp-co">Asurion</p>
+              <ul>
+                <li>Reviewed device protection claims and supporting documents to help verify claim eligibility and accuracy.</li>
+                <li>Examined product receipts, insurance-related documents, and photos of damaged devices submitted with claims.</li>
+                <li>Evaluated claim information to help determine if a device qualified for repair or replacement under the plan.</li>
+                <li>Provided technical support on claims and guided customers through claim requirements.</li>
+                <li>Followed established procedures and documentation requirements when reviewing claims and handling concerns.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="exp reveal">
+            <div class="exp-meta">
+              <p class="exp-date">2019 to 2020</p>
+              <p class="exp-ind">Real estate</p>
+            </div>
+            <div class="exp-body">
+              <h3>Real Estate Appointment Setter</h3>
+              <p class="exp-co">Contract / Freelance</p>
+              <ul>
+                <li>Made outbound calls to property owners from scripts and lead lists and scheduled appointments for local representatives.</li>
+                <li>Updated lead records and tracked follow-ups using Mojo Dialer, Google Sheets, CRM systems, Zillow, and Redfin.</li>
+              </ul>
+              <p class="exp-tools"><span>Tools</span> Mojo Dialer, Google Sheets, Zillow, Redfin</p>
+            </div>
+          </article>
+
+          <article class="exp reveal">
+            <div class="exp-meta">
+              <p class="exp-date">2018 to 2019</p>
+              <p class="exp-ind">Healthcare provider support</p>
+            </div>
+            <div class="exp-body">
+              <h3>Customer Service Representative / Provider Service Advocate</h3>
+              <p class="exp-co">EXL</p>
+              <ul>
+                <li>Assisted healthcare providers, including doctors and nurses, with claims inquiries and benefits information.</li>
+                <li>Followed up on cases, documented interactions, and maintained accurate records using internal systems and spreadsheets.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="exp reveal">
+            <div class="exp-meta">
+              <p class="exp-date">2014 to 2016</p>
+              <p class="exp-ind">Transcription quality</p>
+            </div>
+            <div class="exp-body">
+              <h3>Quality Control Analyst, Transcription</h3>
+              <p class="exp-co">ScopeWorks Asia Inc.</p>
+              <ul>
+                <li>Reviewed Australian voice-to-text transcription work for accuracy and quality, with a focus on detail.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="exp exp-edu reveal">
+            <div class="exp-meta">
+              <p class="exp-date">Education</p>
+            </div>
+            <div class="exp-body">
+              <h3>Bachelor of Science in Hotel and Restaurant Management</h3>
+              <p class="exp-co">Colegio de San Juan de Letran</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section class="section section-alt" id="tools" aria-labelledby="tools-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Tools and skills</p>
+          <h2 id="tools-title">What I use day to day</h2>
+          <p class="section-sub">Only tools and skills I've used in the roles above.</p>
+        </div>
+
+        <dl class="tool-groups">
+          <div class="tool-row reveal">
+            <dt>CRM &amp; Lead Management</dt>
+            <dd><ul class="chip-list"><li>GoHighLevel</li><li>Carbon CRM</li><li>Lead follow-up and prequalification</li><li>Pipeline and status tracking</li></ul></dd>
+          </div>
+          <div class="tool-row reveal">
+            <dt>Calling &amp; Communication</dt>
+            <dd><ul class="chip-list"><li>CallHippo</li><li>Quo</li><li>Mojo Dialer</li><li>Microsoft Outlook</li><li>Slack</li><li>Nedzo.ai</li><li>Email and SMS follow-up</li></ul></dd>
+          </div>
+          <div class="tool-row reveal">
+            <dt>Administrative Tools</dt>
+            <dd><ul class="chip-list"><li>Notion</li><li>Google Sheets</li><li>Slack</li><li>Microsoft Outlook</li></ul></dd>
+          </div>
+          <div class="tool-row reveal">
+            <dt>Documentation &amp; Tracking</dt>
+            <dd><ul class="chip-list"><li>Lead notes and follow-up tasks</li><li>Case and interaction records</li><li>Data entry and record keeping</li><li>Spreadsheet tracking</li></ul></dd>
+          </div>
+          <div class="tool-row reveal">
+            <dt>Industry-Specific Support</dt>
+            <dd><ul class="chip-list"><li>Document collection</li><li>Application information review</li><li>Claims and document verification</li><li>Provider claims and benefits inquiries</li><li>Zillow and Redfin research</li></ul></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- WORK SAMPLES -->
+    <section class="section" id="samples" aria-labelledby="samples-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Work samples</p>
+          <h2 id="samples-title">How I organize the work</h2>
+          <p class="section-sub">Client and employer records are confidential, so these are sample demonstrations built with fictional, non-sensitive data. They show my process, not actual client work.</p>
+        </div>
+
+        <div class="sample-grid">
+          <article class="sample reveal">
+            <p class="sample-flag">Sample demonstration &middot; fictional data</p>
+            <h3>Pipeline organization</h3>
+            <p>One stage, one next step, and one due date for every lead.</p>
+            <button type="button" class="btn btn-outline btn-sm" data-sample="pipeline" aria-haspopup="dialog">View sample</button>
+          </article>
+          <article class="sample reveal">
+            <p class="sample-flag">Sample demonstration &middot; fictional data</p>
+            <h3>Follow-up tracker</h3>
+            <p>A simple sheet that shows who needs contact today.</p>
+            <button type="button" class="btn btn-outline btn-sm" data-sample="tracker" aria-haspopup="dialog">View sample</button>
+          </article>
+          <article class="sample reveal">
+            <p class="sample-flag">Sample demonstration &middot; fictional data</p>
+            <h3>Funding intake checklist</h3>
+            <p>Track what has arrived, what is missing, and who has the next move.</p>
+            <button type="button" class="btn btn-outline btn-sm" data-sample="intake" aria-haspopup="dialog">View sample</button>
+          </article>
+          <article class="sample reveal">
+            <p class="sample-flag">Sample demonstration &middot; fictional data</p>
+            <h3>Appointment-setting call log</h3>
+            <p>A short call flow and a log that records every attempt.</p>
+            <button type="button" class="btn btn-outline btn-sm" data-sample="calllog" aria-haspopup="dialog">View sample</button>
+          </article>
+          <article class="sample reveal">
+            <p class="sample-flag">Sample demonstration &middot; fictional data</p>
+            <h3>Property owner outreach tracker</h3>
+            <p>Call results and follow-ups for a cold-call list.</p>
+            <button type="button" class="btn btn-outline btn-sm" data-sample="outreach" aria-haspopup="dialog">View sample</button>
+          </article>
+          <article class="sample reveal">
+            <p class="sample-flag">Sample demonstration &middot; fictional data</p>
+            <h3>Case documentation template</h3>
+            <p>A consistent way to record an issue, the steps taken, and the next owner.</p>
+            <button type="button" class="btn btn-outline btn-sm" data-sample="case" aria-haspopup="dialog">View sample</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW I WORK -->
+    <section class="section process tone-navy" id="process" aria-labelledby="proc-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">How I work</p>
+          <h2 id="proc-title">Dependable, organized, and finished properly</h2>
+        </div>
+        <ol class="steps" id="steps">
+          <li class="step"><span class="step-n">01</span><h3>Understand</h3><p>I learn the business and how work currently flows: who handles what, which tools you use, and where things get dropped.</p></li>
+          <li class="step"><span class="step-n">02</span><h3>Organize</h3><p>We agree on priorities, tools, and responsibilities, so I know what is mine to handle and what needs your decision.</p></li>
+          <li class="step"><span class="step-n">03</span><h3>Execute</h3><p>I work through the tasks and keep accurate records, with notes that someone else could pick up and follow.</p></li>
+          <li class="step"><span class="step-n">04</span><h3>Follow through</h3><p>I report on progress, flag blockers early, and suggest small process improvements where they make sense.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container split">
+        <div class="split-head reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">Straight answers</h2>
+        </div>
+        <div class="split-body faq reveal">
+          <details>
+            <summary>What services can you provide?</summary>
+            <p>Virtual assistant and admin support, GoHighLevel record upkeep, business funding support, lead follow-up and appointment setting, customer service, and non-clinical claims and benefits support. Credit services support is based on transferable skills, not past credit repair work.</p>
+          </details>
+          <details>
+            <summary>Have you worked with U.S.-based businesses?</summary>
+            <p>Yes. My CV lists nearly two years of virtual assistance supporting U.S.-based businesses, mainly in business funding and appointment setting.</p>
+          </details>
+          <details>
+            <summary>What experience do you have with GoHighLevel?</summary>
+            <p>I used GoHighLevel daily in my funding role: updating lead notes and follow-up tasks and tracking lead progress. I'm a capable user. I haven't built custom automations, integrations, or complex workflows, so I won't claim that.</p>
+          </details>
+          <details>
+            <summary>Can you support business funding operations?</summary>
+            <p>Yes, on the preparation side. I reviewed preliminary qualification details, collected documents, organized application information, and passed files to a colleague or the CEO. I don't approve funding or give financial advice.</p>
+          </details>
+          <details>
+            <summary>Have you handled healthcare and insurance-related administrative work?</summary>
+            <p>Yes, in a BPO setting. At EXL I helped healthcare providers with claims inquiries and benefits information, and at Asurion I reviewed device protection claims and supporting documents. I haven't done medical billing or coding, and I'm not licensed to make clinical or coverage decisions.</p>
+          </details>
+          <details>
+            <summary>Can you work with an existing CRM and workflow?</summary>
+            <p>Yes. I've worked in GoHighLevel and Carbon CRM alongside spreadsheets, dialers, Slack, Notion, and Outlook. I follow the process you already have, and I'll tell you honestly if a tool is new to me.</p>
+          </details>
+          <details>
+            <summary>How can a client get started?</summary>
+            <p>Send a message using the form below or email me directly. Tell me what you need handled and which tools you use, and we can talk through scope from there.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact tone-navy" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Have Leads to Manage, Customers to Support, or Operations to Organize?</h2>
+          <p class="section-sub">Let's discuss where I can help your team save time, stay organized, and follow through more consistently.</p>
+          <ul class="contact-links">
+            <li><span>Email</span><a href="mailto:menschingjas@gmail.com">menschingjas@gmail.com</a></li>
+            <li id="li-linkedin" hidden><span>LinkedIn</span><a id="link-linkedin" href="#" rel="noopener" target="_blank">View profile</a></li>
+            <li id="li-onlinejobs" hidden><span>OnlineJobs.ph</span><a id="link-onlinejobs" href="#" rel="noopener" target="_blank">View profile</a></li>
+            <li><span>CV</span><a href="assets/Jason-Mensching-CV.pdf" download="Jason-Mensching-CV.pdf">Download My CV (PDF)</a></li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="contact-form" novalidate aria-labelledby="form-title">
+          <h3 id="form-title">Send a message</h3>
+          <div class="form-errors" id="form-errors" role="alert" tabindex="-1" hidden></div>
+
+          <div class="field">
+            <label for="f-name">Name <span class="req" aria-hidden="true">*</span></label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
+            <p class="err" id="e-name" hidden></p>
+          </div>
+          <div class="field">
+            <label for="f-email">Business email <span class="req" aria-hidden="true">*</span></label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="e-email">
+            <p class="err" id="e-email" hidden></p>
+          </div>
+          <div class="field">
+            <label for="f-company">Company</label>
+            <input id="f-company" name="company" type="text" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="f-type">Type of support needed <span class="req" aria-hidden="true">*</span></label>
+            <select id="f-type" name="type" required aria-describedby="e-type">
+              <option value="">Choose one</option>
+              <option>Virtual assistant and admin support</option>
+              <option>GoHighLevel CRM support</option>
+              <option>Business funding support</option>
+              <option>Credit services client support</option>
+              <option>Real estate lead follow-up</option>
+              <option>Customer service</option>
+              <option>Healthcare and insurance admin support</option>
+              <option>Sales and appointment setting</option>
+              <option>Not sure yet</option>
+            </select>
+            <p class="err" id="e-type" hidden></p>
+          </div>
+          <div class="field">
+            <label for="f-details">Project details <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="f-details" name="details" rows="5" required minlength="20" aria-describedby="e-details"></textarea>
+            <p class="err" id="e-details" hidden></p>
+          </div>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+
+          <button class="btn btn-primary btn-lg" type="submit" id="submit-btn">Send message</button>
+          <p class="form-note" id="form-note">Sending opens your email app with this message ready to go. Nothing is sent until you send it from there.</p>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-grid">
+      <div class="foot-brand">
+        <p class="foot-name"><span class="monogram" aria-hidden="true">JM</span> Jason Mensching</p>
+        <p>Remote virtual assistant for CRM upkeep, lead follow-up, appointment setting, and business funding support.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h2 class="foot-h">Explore</h2>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#samples">Work Samples</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="foot-h">Contact</h2>
+        <ul>
+          <li><a href="mailto:menschingjas@gmail.com">menschingjas@gmail.com</a></li>
+          <li><a href="#contact">Contact form</a></li>
+          <li><a href="assets/Jason-Mensching-CV.pdf" download="Jason-Mensching-CV.pdf">Download My CV</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container foot-base">
+      <p>&copy; <span id="year">2026</span> Jason Mensching. All rights reserved.</p>
+      <a class="text-link" href="#top">Back to top <span aria-hidden="true">&uarr;</span></a>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" type="button" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <dialog id="sample-dialog" aria-labelledby="sd-title">
+    <div class="sd-head">
+      <p class="sample-flag">Sample demonstration &middot; fictional data, not client work</p>
+      <button type="button" class="icon-btn" id="sd-close" aria-label="Close sample">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+    </div>
+    <h3 id="sd-title"></h3>
+    <div id="sd-body"></div>
+  </dialog>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
